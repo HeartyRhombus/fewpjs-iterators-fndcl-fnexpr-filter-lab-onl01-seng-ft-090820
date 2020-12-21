@@ -1,8 +1,5 @@
-function findMatching(drivers, string) {
-    return drivers.filter( d => {
-        return d.toLowerCase() === string.toLowerCase()
-    })
-}
+const findMatching = (drivers, string) => drivers.filter( d => d.toLowerCase() === string.toLowerCase())
+
 
 function fuzzyMatch(drivers, string) {
     return drivers.filter( d => {
